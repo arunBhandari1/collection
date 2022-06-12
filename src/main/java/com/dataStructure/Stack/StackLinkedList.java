@@ -1,6 +1,6 @@
-package com.dataStructure;
+package com.dataStructure.Stack;
 
-public class MyStack<T>
+public class StackLinkedList<T>
 {
    class Node<T> {
       Node next;
@@ -22,7 +22,7 @@ public class MyStack<T>
       }
       return null;
    }
-   public void add(T data){  // H-> H.node
+   public void push(T data){  // H-> H.node
       Node node = new Node(data);
       node.next=head;
       head=node;
@@ -40,13 +40,15 @@ public class MyStack<T>
    }
 
 
+
+
    public static void main(String[] args)
    {
-      MyStack<Integer> struct = new MyStack<>();
-      struct.add(2);
-      struct.add(3);
-      struct.add(4);
-      struct.add(5);
+      StackLinkedList<Integer> struct = new StackLinkedList<>();
+      struct.push(2);
+      struct.push(3);
+      struct.push(4);
+      struct.push(5);
       struct.print();
 
    }

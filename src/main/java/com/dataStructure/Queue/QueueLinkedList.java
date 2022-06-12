@@ -1,6 +1,6 @@
-package com.dataStructure;
+package com.dataStructure.Queue;
 
-public class MyQueue<T>
+public class QueueLinkedList<T>
 {
    Node head; //remove here
    Node tail; //add here
@@ -66,7 +66,7 @@ public class MyQueue<T>
 
    public static void main(String[] args)
    {
-      MyQueue<Integer> struct = new MyQueue<>();
+      QueueLinkedList<Integer> struct = new QueueLinkedList<>();
       struct.queue(2);
       struct.queue(3);
       struct.queue(4);
